@@ -1,0 +1,19 @@
+name: JAVA CI
+on:
+   push:
+      branches: ["master"]
+jobs:
+  build:
+     runs-on: ubuntu-latest
+     steps:
+        - name: checkout-code
+          uses: actions/checkout@v4
+        - name: setup java s/w
+          uses: actions/setup java@v4
+          with:
+             distrubution: 'temruin'
+             javaversion: '17'
+        - name : compile code
+          run: javac msg.java
+        - name: run java code
+          run: java msg
