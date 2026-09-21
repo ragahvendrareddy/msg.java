@@ -12,7 +12,7 @@ jobs:
           uses: actions/setup-java@v4
           with:
              distribution: 'temurin'
-             javaversion: '17'
+             java-version: '17'
         - name : compile code
           run: javac msg.java
         - name: run java code
