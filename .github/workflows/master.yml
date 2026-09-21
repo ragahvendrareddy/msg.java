@@ -11,7 +11,7 @@ jobs:
         - name: setup java s/w
           uses: actions/setup-java@v4
           with:
-             distrubution: 'temurin'
+             distribution: 'temurin'
              javaversion: '17'
         - name : compile code
           run: javac msg.java
