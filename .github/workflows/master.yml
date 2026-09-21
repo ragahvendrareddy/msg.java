@@ -9,9 +9,9 @@ jobs:
         - name: checkout-code
           uses: actions/checkout@v4
         - name: setup java s/w
-          uses: actions/setup java@v4
+          uses: actions/setup-java@v4
           with:
-             distrubution: 'temruin'
+             distrubution: 'temurin'
              javaversion: '17'
         - name : compile code
           run: javac msg.java
