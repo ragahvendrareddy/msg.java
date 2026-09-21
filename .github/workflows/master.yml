@@ -16,4 +16,4 @@ jobs:
         - name : compile code
           run: javac msg.java
         - name: run java code
-          run: java msg
+          run: java msg.java
