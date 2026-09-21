@@ -14,6 +14,6 @@ jobs:
              distribution: 'temurin'
              java-version: '17'
         - name : compile code
-          run: javac Msg.java
+          run: javac msg.java
         - name: run java code
-          run: java Msg.java
+          run: java msg.java
